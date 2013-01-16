@@ -1,0 +1,453 @@
+/************************************************
+/* RESET MEYER
+************************************************/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/************************************************
+/* FIN RESET MEYER
+************************************************/
+
+@font:Cuprum', sans-serif';
+@white:#e5e5e1;
+@black:#333333;
+@grey: #afafaf;
+@orange:#468BB7;
+
+/*
+-moz-
+-o-
+-ms-
+-webkit-*/
+@media screen and (min-width: 100px) and (max-width: 599px) {
+  .hiddenTitle {
+    display: none;
+  }
+  body {
+    font-size: 16px;
+    font-family: @font;
+    color: #ffedee;
+    background-color: @grey;
+  }
+  #page {
+    min-width: 100px;
+    max-width: 599px;
+  }
+  a {
+    color: @black;
+    text-decoration: none;
+  }
+  a:hover,
+  a:active {
+    color: @black;
+  }
+  label {
+    display: block;
+    margin-bottom: 0.4em;
+    font-size: 1.4em;
+    color:@white;
+  }
+  input {
+    height: 1.8em;
+    font-size: 1em;
+    display: block;
+    width: 97%;
+    padding-left: 0.4em;
+    margin-top: 1em;
+    color: @black;
+    font-family: @font;
+
+    &:focus{
+      border: solid @orange 3px;
+    }
+  }
+  button {
+    background-color: @orange;
+    height: 2em;
+    color: @white;
+    font-family: @font;
+    font-size: 1.12em;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    float: right;
+    margin-top: 1em;
+    border: solid white 1px;
+    line-height: 0.5em;
+    padding: 1em;
+    font-weight: 700;
+  }
+  button:hover,
+  button:active {
+    color: @white;
+    background-color: @black;
+  }
+  form {
+    width: 76%;
+    padding-bottom: 4.5em;
+    margin: 0 auto;
+  }
+
+  #logoAccueil {
+    width: 17.6em;
+    margin: 0 auto;
+    margin: 2em 0 1.5em 0;
+  }
+  .content {
+    width: 18.5em;
+    margin: 0 auto;
+  }
+  .content > p {
+    color: @black;
+    font-size: 0.875em;
+    margin-top: 1em;
+  }
+  /*-----------HEADER------------*/
+  header {
+    background-image: url('../img/bcg.png');
+    background-repeat: repeat;
+    height: 4em;
+    padding: 0.5em;
+    margin-bottom: 2em;
+  }
+  header img {
+    float: left;
+    width: 9em;
+  }
+  
+  /*-------FOOTER-----------*/
+  footer {
+    background-color: @grey;
+    padding: 2.5em;
+    margin-top: 2em;
+    clear: both;
+    position: relative;
+  }
+  footer p {
+    color: @black;
+    font-size: 0.625em;
+  }
+  /*------------ACCUEIL-------*/
+
+
+#accueil {
+
+div {
+  background-color: #B92B35;
+  width: 16.2em;
+  -moz-border-radius: 10px;
+  -o-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  padding: 1em;
+  padding-bottom: 4.5em;
+  -moz-box-shadow: 0px 4px 9px black;
+  -o-box-shadow: 0px 4px 9px black;
+  -ms-box-shadow: 0px 4px 9px black;
+  -webkit-box-shadow: 0px 4px 9px black;
+  padding-bottom: 1em;
+
+}
+p {
+  line-height: 1.1em;
+  text-align: center;
+}
+button {
+  float:none;
+  width: 10.7em;
+  font-size: 1.5em;
+}
+}
+
+
+/*------------AJOUT SERIE-------*/
+
+
+.clic {
+  color: black;
+}
+
+.resultats {
+  margin-top: 1em;
+    li {
+    color: black;
+    padding: 1em 0 2.5em 0;
+    font-size: 0.9em;
+    border-bottom: 1px solid @grey;
+  }
+
+  h3 {
+    color: @black;
+    font-family: @font;
+  }
+
+  span {
+    display: block;
+    margin-bottom: 0.8em;
+  }
+
+  button {
+    margin-top: 0;
+    font-size: 1.1em;
+    height: 1.5em;
+  }
+}
+/*------------PLANNING-------*/
+
+.grandTitre {
+	font-size: 1.2em;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: @font;
+    background-color: @black;
+    border-radius: 3px 3px 0px 0px;
+    padding: 1em 0 1em 0;
+}
+
+.conteneur {
+     -moz-border-radius: 10px;
+    -o-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -webkit-border-radius: 10px;       
+    border: 5px solid @orange;
+
+    li {
+      background-color: @white;
+    	border: 2px solid @black;
+    	padding: 1em 1em 3em 1em;
+      a {
+        color: @black;
+        &:hover,&:active {
+          color: @black;
+        }
+      }
+    }
+    span {    	
+    	font-family: @font;
+    	text-transform: uppercase;
+    	font-size: 0.8em;
+    	float:left;
+      color: @black;
+    }
+    h3 {
+    	clear:both;
+    	font-family: @font;
+      color: @black;
+
+    }
+
+    h4 {
+    	font-family: @font;
+  		font-size: 0.9em;
+      color: @black;
+    }
+}
+
+
+/*------------MES SERIES-------*/
+
+#mesSeries {
+	margin-bottom: 1em;
+}
+
+#boutons {
+  height: 3.3em;
+  margin: 0 auto;
+  width: 21.3em;
+  span {
+    box-shadow: 1px 4px 7px @black;
+    border-radius: 40px;
+    height: 2.8em;
+    width: 2.8em;
+    &:hover,&:active {
+      box-shadow: 1px 4px 7px @black;
+    }
+  }
+}
+
+.bouton {
+  float: left;
+  width: 3.8em;
+  margin: 0 0.8em 0 0.8em;
+  cursor: pointer;
+  &:first-child {
+    margin-left: 0.1em;
+
+  }
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+#listeSeries {
+  h2 {
+  font-size: 1.25em;
+  font-family: @font;
+  color: @black;
+  cursor: pointer;
+  &:hover,&a:active {
+    color: @black;
+  }
+  }
+  .delete {
+    box-shadow: 1px 2px 4px @black;
+    border-radius: 40px;
+    height: 2.3em;
+    width: 2.3em;
+    cursor: pointer;
+    float: right;
+    &:hover,&:active {
+      box-shadow: 1px 2px 4px @black;
+    }
+  }
+}
+
+.detailsSerie {
+  span {
+    text-transform: none;
+    float:none;
+    display: block;
+    font-family: @font;
+
+  }
+  .moinsDetails {
+  background-color: @black;
+height: 2em;
+color: @white;
+font-family: @font;
+font-size: 0.9em;
+border: none;
+border-radius: 7px;
+cursor: pointer;
+-moz-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.75);
+-o-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.75);
+-ms-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.75);
+-webkit-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.75);
+
+display: inline;
+padding: 0.3em;
+&:hover {
+  color: @black;
+  background-color: @white;
+}
+}
+}
+
+
+
+.descSerie {
+  color: black;
+  font-size: 0.8em;
+  line-height: 1.3em;
+  margin: 0.5em 0 1em 0;
+}
+
+
+#resetBulle {
+  position: absolute;
+  background-color: @white;
+  width: 10.2em;
+  -moz-border-radius: 10px;
+  -o-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  padding: 1em;
+  padding-bottom: 4.5em;
+  -moz-box-shadow: 1px 2px 4px black;
+  -o-box-shadow: 1px 2px 4px black;
+  -ms-box-shadow: 1px 2px 4px black;
+-webkit-box-shadow: 1px 2px 4px black;
+  padding-bottom: 1em;
+  top: -6.5em;
+  right: 3.5em;
+  p {
+    font-size: 0.8em;
+    color: @black;
+  }
+  span {
+    font-family: @font;
+  }
+  button {
+    background-color: @black;
+    color: @white;
+    font-family: @font;
+    font-size: 0.8em;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    -moz-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.75);
+    -o-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.75);
+    -ms-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.75);
+    margin-top: 1em;
+    &:hover,&:active {
+      color: @black;
+      background-color: @white;
+    }
+
+  }
+}
+#oui {
+  float: left;
+}
+
+}
+
+/*-------PLANNING---------*/
+#planning {
+  span {
+    font-size: 1em;
+  }
+  h3 {
+    text-align: center;
+    margin-bottom: 0.5em;
+  }
+  h4 {
+    text-align: center;
+  }
+}
