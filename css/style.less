@@ -53,17 +53,12 @@ table {
 /* FIN RESET MEYER
 ************************************************/
 
-@font:Cuprum', sans-serif';
+@font:'Droid Sans', sans-serif;
 @white:#e5e5e1;
 @black:#333333;
 @grey: #afafaf;
 @orange:#468BB7;
 
-/*
--moz-
--o-
--ms-
--webkit-*/
 @media screen and (min-width: 100px) and (max-width: 599px) {
   .hiddenTitle {
     display: none;
@@ -71,8 +66,9 @@ table {
   body {
     font-size: 16px;
     font-family: @font;
-    color: #ffedee;
-    background-color: @grey;
+    background-image: url('../img/bcgGrey.png');
+    max-width:640px;
+    line-height: 1.2em;
   }
   #page {
     min-width: 100px;
@@ -82,25 +78,23 @@ table {
     color: @black;
     text-decoration: none;
   }
-  a:hover,
-  a:active {
-    color: @black;
-  }
+
   label {
     display: block;
     margin-bottom: 0.4em;
-    font-size: 1.4em;
-    color:@white;
+    color:@black;
+    font-size: 1.09em;
+
   }
   input {
     height: 1.8em;
     font-size: 1em;
     display: block;
-    width: 97%;
-    padding-left: 0.4em;
+    width: 99%;
     margin-top: 1em;
     color: @black;
     font-family: @font;
+    padding-left: 0.25em;
 
     &:focus{
       border: solid @orange 3px;
@@ -114,7 +108,6 @@ table {
     font-size: 1.12em;
     border: none;
     border-radius: 7px;
-    cursor: pointer;
     float: right;
     margin-top: 1em;
     border: solid white 1px;
@@ -122,13 +115,13 @@ table {
     padding: 1em;
     font-weight: 700;
   }
-  button:hover,
+
   button:active {
     color: @white;
     background-color: @black;
   }
   form {
-    width: 76%;
+    width: 81%;
     padding-bottom: 4.5em;
     margin: 0 auto;
   }
@@ -138,40 +131,28 @@ table {
     margin: 0 auto;
     margin: 2em 0 1.5em 0;
   }
-  .content {
-    width: 18.5em;
-    margin: 0 auto;
-  }
-  .content > p {
-    color: @black;
-    font-size: 0.875em;
-    margin-top: 1em;
-  }
+  
   /*-----------HEADER------------*/
   header {
     background-image: url('../img/bcg.png');
     background-repeat: repeat;
-    height: 4em;
-    padding: 0.5em;
+    height: 5em;
     margin-bottom: 2em;
   }
   header img {
     float: left;
-    width: 9em;
   }
   
   /*-------FOOTER-----------*/
+
   footer {
-    background-color: @grey;
-    padding: 2.5em;
+    background-image: url('../img/bcgGrey.png');
+    background-repeat: repeat;
     margin-top: 2em;
     clear: both;
     position: relative;
-  }
-  footer p {
-    color: @black;
-    font-size: 0.625em;
-  }
+   }
+
   /*------------ACCUEIL-------*/
 
 
@@ -212,13 +193,22 @@ button {
   color: black;
 }
 
-.resultats {
-  margin-top: 1em;
+.add{}
+
+.result{
+  margin: 0 auto;
+  width: 80%;
+  border: 5px solid @orange;
+  background-image: url('../img/bcg.png');
+}
+
+.listResult{
+
     li {
-    color: black;
-    padding: 1em 0 2.5em 0;
-    font-size: 0.9em;
-    border-bottom: 1px solid @grey;
+      background-color: #e5e5e1;
+      border: 2px solid #333333;
+      padding: 0.7em 0.7em 3em 0.7em;
+
   }
 
   h3 {
@@ -229,48 +219,75 @@ button {
   span {
     display: block;
     margin-bottom: 0.8em;
+    font-size: 1em;
+    width: 11em;
+    float: left;
+    color:@black;
+
   }
 
-  button {
-    margin-top: 0;
-    font-size: 1.1em;
-    height: 1.5em;
+  .ajout{
+    float: right;
+    width: auto;
+  }
+
+}
+
+
+.result{
+  margin-bottom: 1em;
+background-image: url('../img/bcg.png');
+background-repeat: repeat;
+
+  h1{
+    padding: 0.5em 0 0 0.5em;
+  }
+
+  li{
+    background-color: #e5e5e1;
+    border: 2px solid #333333;
+    padding: 1em 1em 3em 1em;
   }
 }
+
 /*------------PLANNING-------*/
-
-.grandTitre {
-	font-size: 1.2em;
-    text-transform: uppercase;
-    text-align: center;
+h1 {
+	 margin-bottom: 0.4em;
+    font-size: 1.4em;
+    color:@white;
     font-family: @font;
-    background-color: @black;
-    border-radius: 3px 3px 0px 0px;
-    padding: 1em 0 1em 0;
+    font-weight: 700;
 }
 
-.conteneur {
+.container {
+
+  h1{
+
+    padding: 0.5em 0 0 0.5em;
+  }
      -moz-border-radius: 10px;
     -o-border-radius: 10px;
     -ms-border-radius: 10px;
     -webkit-border-radius: 10px;       
     border: 5px solid @orange;
+    background-image: url('../img/bcg.png');
 
     li {
-      background-color: @white;
-    	border: 2px solid @black;
-    	padding: 1em 1em 3em 1em;
+      background-color: #e5e5e1;
+      border: 2px solid #333333;
+      padding: 0.7em 0.7em 3em 0.7em;
+        img{
+          width: 100%;
+          height: auto;
+        }
       a {
         color: @black;
-        &:hover,&:active {
-          color: @black;
         }
-      }
     }
     span {    	
     	font-family: @font;
     	text-transform: uppercase;
-    	font-size: 0.8em;
+    	font-size: 1em;
     	float:left;
       color: @black;
     }
@@ -291,30 +308,25 @@ button {
 
 /*------------MES SERIES-------*/
 
-#mesSeries {
-	margin-bottom: 1em;
-}
+#mySeries {
+margin-bottom: 1em;
+background-image: url('../img/bcg.png');
+background-repeat: repeat;
+margin: 0 auto;
 
-#boutons {
-  height: 3.3em;
-  margin: 0 auto;
-  width: 21.3em;
-  span {
-    box-shadow: 1px 4px 7px @black;
-    border-radius: 40px;
-    height: 2.8em;
-    width: 2.8em;
-    &:hover,&:active {
-      box-shadow: 1px 4px 7px @black;
-    }
+  h1{
+    padding: 0.5em 0 0 0.5em;
   }
 }
 
+#boutons {
+  text-align: center;
+}
+
 .bouton {
-  float: left;
-  width: 3.8em;
-  margin: 0 0.8em 0 0.8em;
-  cursor: pointer;
+  display: inline-block;
+
+  margin: 0 0 0 1.5em;
   &:first-child {
     margin-left: 0.1em;
 
@@ -324,27 +336,44 @@ button {
   }
 }
 
-#listeSeries {
+#listSeries {
   h2 {
-  font-size: 1.25em;
-  font-family: @font;
-  color: @black;
-  cursor: pointer;
-  &:hover,&a:active {
-    color: @black;
+    margin-top: 0.5em;
+    font-size: 1.25em;
+    font-family: @font;
+    color: @orange;
+
+    img{
+      width: 11%;
+      height: auto;
+    }
   }
+
+  li{
+    position: relative;
   }
   .delete {
     box-shadow: 1px 2px 4px @black;
     border-radius: 40px;
     height: 2.3em;
     width: 2.3em;
-    cursor: pointer;
     float: right;
-    &:hover,&:active {
-      box-shadow: 1px 2px 4px @black;
-    }
-  }
+   }
+}
+
+.deleteSerie{
+    position: absolute;
+  background-color: @white;
+  width: 15.7em;
+  padding: 1em;
+  padding-bottom: 4.5em;
+  -moz-box-shadow: 1px 1px 10px black;
+  -o-box-shadow: 1px 1px 10px black;
+  -ms-box-shadow: 1px 1px 10px black;
+  -webkit-box-shadow: 1px 1px 10px black;
+  padding-bottom: 1em;
+  top: 0em;
+  right: 0.3em;
 }
 
 .detailsSerie {
@@ -355,83 +384,72 @@ button {
     font-family: @font;
 
   }
-  .moinsDetails {
-  background-color: @black;
-height: 2em;
-color: @white;
-font-family: @font;
-font-size: 0.9em;
-border: none;
-border-radius: 7px;
-cursor: pointer;
--moz-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.75);
--o-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.75);
--ms-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.75);
--webkit-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.75);
-
-display: inline;
-padding: 0.3em;
-&:hover {
-  color: @black;
-  background-color: @white;
+  
 }
-}
+.moinsDetails {
+  background-color: @orange;
+  color: @white;
+  font-family: @font;
+  font-size: 1em;
+  border: none;
+  border-radius: 10px;
+  display: inline;
+  padding: 0.5em;
 }
 
 
 
 .descSerie {
   color: black;
-  font-size: 0.8em;
+  font-size: 1em;
   line-height: 1.3em;
+  padding-top: 1em;
   margin: 0.5em 0 1em 0;
+  clear: both;
+}
+
+.detailsSeries{
+  margin-top: 1em;
 }
 
 
-#resetBulle {
+#appReset {
   position: absolute;
   background-color: @white;
-  width: 10.2em;
-  -moz-border-radius: 10px;
-  -o-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -webkit-border-radius: 10px;
+  width: 15.7em;
   padding: 1em;
   padding-bottom: 4.5em;
-  -moz-box-shadow: 1px 2px 4px black;
-  -o-box-shadow: 1px 2px 4px black;
-  -ms-box-shadow: 1px 2px 4px black;
--webkit-box-shadow: 1px 2px 4px black;
+  -moz-box-shadow: 1px 1px 10px black;
+  -o-box-shadow: 1px 1px 10px black;
+  -ms-box-shadow: 1px 1px 10px black;
+  -webkit-box-shadow: 1px 1px 10px black;
   padding-bottom: 1em;
-  top: -6.5em;
-  right: 3.5em;
+  top: -5em;
+  right: 0.6em;
   p {
-    font-size: 0.8em;
+    font-size: 1em;
     color: @black;
   }
   span {
     font-family: @font;
   }
   button {
-    background-color: @black;
+    background-color: @orange;
     color: @white;
     font-family: @font;
-    font-size: 0.8em;
+    font-size: 1em;
     border: none;
     border-radius: 7px;
-    cursor: pointer;
     -moz-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.75);
     -o-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.75);
     -ms-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.75);
     -webkit-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.75);
     margin-top: 1em;
-    &:hover,&:active {
-      color: @black;
-      background-color: @white;
-    }
-
-  }
+    line-height: 0.2em;
+     }
 }
+
+
 #oui {
   float: left;
 }
@@ -444,10 +462,7 @@ padding: 0.3em;
     font-size: 1em;
   }
   h3 {
-    text-align: center;
     margin-bottom: 0.5em;
-  }
-  h4 {
-    text-align: center;
+    padding-top: 0.5em;
   }
 }

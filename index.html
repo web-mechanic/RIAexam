@@ -3,68 +3,74 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Live Series</title>
+	<link rel="icon" type="image/png" href="img/fav.png" />
 	<link rel="stylesheet" href="css/style.css">
 	<meta name="viewport" content="width=device-width" />
-	<link href='http://fonts.googleapis.com/css?family=Cuprum:400,700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
+	<meta name="description" content="Vous cherchiez une webApp pour gérez vos séries? La voici! Vous avez tendance à vous perdre dans les saisons ou les épisodes de votre série favorite... Voila qui vous aidera." />
 </head>
 <body>
 	<h1 class="hiddenTitle">Live Series</h1>
 	<div id="page">
 	<header>
-		<a href="index.html"><img class="logo" src="img/logo.png" alt=""></a>
-
-
+		<a href="index.html"><img class="logo" src="img/logo.png" alt="Logo de l'application Live Series" Title="Cliquez pour revenir à l'acceuil de Live Series" height="76" width="163"></a>
 	</header>
+
 	<div class="content">
 				
 	</div>
-	<div id="ajoutSeries">
+	<div id="addSeries">
 		<form action="#" method="get" id="searchForm">
 			<label for="serie">Quelle série souhaites-tu suivre&nbsp;?
 			<input type="text" id="serie">
 			</label>
 			<button type="submit" id="searchSerie">Valider</button>
 		</form>
-		<div>	
-		<ul class="resultats">
-			<h3>C'est ce que tu cherches&nbsp;?</h3>
+		<div class="result">	
+		<h1>C'est ce que tu cherches&nbsp;?</h1>
+		<ul class="listResult">
+			
 		</ul>
 		</div>
 	</div>
-	<div id="mesSeries" class="conteneur">
-			<h1 class="grandTitre">Tes séries</h1>
-			<ul id="listeSeries">
+	<div id="mySeries" class="container">
+		<h1>Tes séries</h1>
+			<ul id="listSeries">
 			</ul>
+
 	</div>
-	<div id="detailsSerie" class="conteneur">
+	<div id="detailsSeries" class="container">
 		
 	</div>
-	<div id="planning" class="conteneur">
-			<h1 class="grandTitre">Ton Planning</h1>
+	<div id="planning" class="container">
+		<h1>Ton Planning</h1>
 			<ul>
-
 			</ul>
-		</div>
 	</div>
+
 	<footer>
 		<nav>
 			<ul id="boutons">
-				<li href="ajoutSeries.html" class="bouton" id="menuAjoutSerie"><img class="retina" src="img/ajoutSerie.png" height="91" width="91" alt="Bouton d'ajout d'une série"></li>
-				<li href="planning.html" class="bouton" id="menuPlanning"><img class="retina" src="img/planningSerie.png" width="91" height="91" alt="Lien vers le planning" ></li>
-				<li href="messeries.html" class="bouton" id="menuMesSeries"><img class="retina" src="img/profil.png" width="91" height="91" alt="Lien vers les séries" ></li>
+				<li class="bouton" id="menuAjoutSerie" ><img class="retina" src="img/ajoutSerie.png" height="91" width="91" alt="Bouton d'ajout d'une série">  </li>
+
+				<li class="bouton" id="menuPlanning"> <img class="retina" src="img/planningSerie.png" width="91" height="91" alt="Lien vers le planning" ></li>
+
+				<li class="bouton" id="menuMesSeries"><img class="retina" src="img/profil.png" width="91" height="91" alt="Lien vers les séries" ></li>
+
 				<li class="bouton" id="reset"><img class="retina" src="img/deleteAll.png" width="91" height="91" alt="Clear le localStorage" ></li>			
 			</ul>
 		</nav>
-		<div id="resetBulle">
+		<div id="appReset">
 			<p>Attention, tu vas supprimer toutes les séries enregistrées...</p>
 			<button id="oui">Oui</button>
 			<button id="non">Non</button>
 		</div>
-		<!--<p>© Copyright Mélanie Klein - Décembre 2012</p>-->
 	</footer>
+
 </div>
-	<script type="text/javascript" src="js/jquery.js"></script>
-	<script type="text/javascript" src="js/modernizr.js"></script>
+
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 	<script type="text/javascript" src="js/script.js"></script>
+	
 </body>
 </html>
